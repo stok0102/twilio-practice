@@ -1,8 +1,6 @@
 <%= form_for(message) do |f| %>
-  <%= f.label :to %>
-  <%= f.text_field :to %>
-  <%= f.label :from %>
-  <%= f.text_field :from %>
+  <%= f.collection_select :to, Contact.all, :phone, :name%>
+  <%= f.hidden_field :from, :value => 7155982908  %>
   <%= f.label :body %>
   <%= f.text_field :body %>
   <%= f.submit %>

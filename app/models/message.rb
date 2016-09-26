@@ -15,8 +15,8 @@ private
                    :From => from
                  }
       ).execute
-    rescue
-      false
+    rescue Exception => error
+      throw(:abort)
     end
   end
 end
