@@ -1,5 +1,4 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: [:show, :edit, :update, :destroy]
 
   def index
     @messages = Message.all
@@ -17,6 +16,12 @@ class MessagesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @message = Message.find(params[:id])
+    @message.destroy
+    redirect_to messages_path
   end
 
   def show
