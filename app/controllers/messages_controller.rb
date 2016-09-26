@@ -17,6 +17,7 @@ class MessagesController < ApplicationController
         format.json
       end
     else
+      flash[:notice] = "Message NOT sent!"
       render :new
     end
   end
