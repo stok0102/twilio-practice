@@ -1,6 +1,6 @@
 class Message < ApplicationRecord
   before_create :send_message
-
+  belongs_to :user
 private
 
   def send_message

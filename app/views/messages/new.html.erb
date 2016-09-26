@@ -3,7 +3,7 @@
 <% if @message.errors.any? %>
   <p>Something went wrong:</p>
   <ul>
-    <% message.errors.full_messages.each do |message| %>
+    <% @raimessage.errors.full_messages.each do |message| %>
       <li><%= message %></li>
     <% end %>
   </ul>
