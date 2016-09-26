@@ -1,24 +1,16 @@
-# README
+ACdef3858fa357671fa0fc461031853c21
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+4e0a1db98744aec81a5f807d899a1bce
 
-Things you may want to cover:
+7155982908
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+RestClient::Request.new(
+    :method => :post,
+    :url => 'https://api.twilio.com/2010-04-01/Accounts/ACdef3858fa357671fa0fc461031853c21/Messages.json',
+    :user => 'ACdef3858fa357671fa0fc461031853c21',
+    :password => '4e0a1db98744aec81a5f807d899a1bce',
+    :payload => { :Body => 'Hello world!',
+                  :To => '7154979902',
+                  :From => '7155982908' }
+  ).execute
